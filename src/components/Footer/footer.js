@@ -25,8 +25,8 @@ export function Footer(){
         </div>
         <div className="footer-bottom">
             <div className="footer-links">
-            <a href="#">Payment Terms</a>
-            <a href="#">Policy</a>
+            <a>Payment Terms</a>
+            <a>Policy</a>
           </div>
           </div>
         </footer>
