@@ -1,0 +1,244 @@
+.about-section {
+  position: relative;
+  background-image: url('./green.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.first-container,
+.second-container {
+  width: 100%;
+  max-width: 550px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.first-container {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+.first-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.first-container p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 25px;
+}
+
+.stats {
+  margin-top: 20px;
+}
+
+.stat-item {
+  margin-bottom: 15px;
+}
+
+.stat-item span {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.progress-bar {
+  position: relative;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ffa500;
+  border-radius: 4px;
+}
+
+.percentage {
+  position: absolute;
+  position: relative;
+  right: -450px;
+  top: -15px;
+  font-size: 10px;
+  color: #ffa500;
+}
+
+.second-container {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  color: #242424;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+.second-container h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.second-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+@media (min-width: 1024px) {
+   .overlay {
+    flex-wrap: nowrap;
+  }
+
+  .about-section {
+    max-height: 600px;
+  }
+}
+
+@media (min-width: 780px) {
+  .overlay {
+    flex-wrap: nowrap;
+  }
+
+  .about-section {
+    max-height: 900px;
+  }
+}
+
+@media (max-width: 780px) {
+    .about-section{
+        flex-wrap: wrap;
+        height: 700px;
+        width: auto;
+    }
+
+    .first-container {
+        height: 300px;
+        width: auto;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .second-container {
+        height: 320px;
+        width: auto;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .percentage {
+      right: -350px;
+    }
+}
+
+@media (max-width: 550px) {
+    .percentage {
+        right: -350px;
+      }
+}
+
+@media (max-width: 480px) {
+    .percentage {
+        right: -250px;
+      }
+}
+
+@media (max-width: 450px) {
+    .about-section {
+      height: 900px;
+    }
+
+    .first-container{
+        height: 370px;
+    }
+
+    .second-container {
+        height: 360px;
+    }
+}
+
+                                                             /* Second Section */
+
+.stats-overview {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.716);
+    padding: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.overview-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.icon-clients, .icon-works, .icon-irrigation, .icon-garden {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.overview-number {
+    font-size: 36px;
+    margin: 5px 0;
+}
+
+.overview-line {
+    width: 50px;
+    height: 3px;
+    background-color: green;
+    border: none;
+    margin: 10px auto;
+}
+
+.overview-description {
+    font-size: 18px;
+    font-style: italic;
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    .stats-overview {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .overview-item {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,252 @@
+.garden-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.garden-heading h1 {
+    font-size: 36px;
+    color: #222222;
+    font-weight: bold;
+}
+
+.garden-heading h1 .banner-heading {
+    color: #5baa19;
+}
+
+.garden-heading p {
+    font-size: 18px;
+    color: #5e5e5e;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.gardening-benefits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.gardening-image {
+    margin: 0;
+    margin-left: -30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.benefit {
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.benefit h4 {
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.left-content {
+    text-align: right;
+}
+
+.right-content {
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .gardening-benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gardening-image {
+        margin-top: -20px;
+        margin-bottom: -5px;
+    }
+
+    .benefit {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .left-content,
+    .right-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    .gardening-benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits-content {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gardening-image {
+        margin-top: -18px;
+        margin-bottom: -5px;
+    }
+
+    .benefit {
+        margin-left: 30px;
+    }
+
+    .benefits-content .benefit h4 {
+        font-size: 15px;
+    }
+
+    .left-content,
+    .right-content {
+        text-align: center;
+    }
+
+    .garden-heading h1 {
+        font-size: 25px;
+        margin-top: -50px;
+    }
+}
+
+
+                                            /* Second section */
+
+
+.green-container-1 {
+   background-image: url('./grass.jpg');
+   background-size: cover;
+   background-position: top;
+   height: 220px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   position: relative;
+   overflow: hidden;
+   margin-top: 20px;
+}
+
+.green-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(142, 138, 138, 0.2);
+    z-index: 1;
+}
+.green-banner {
+  display: flex;
+  margin: 50px;
+  gap: 70px;
+}
+
+.green-banner p{
+    color: #ffffff;
+    font-size: 36px;
+    font-family: Noto Serif, serif;
+}
+
+.green-bold {
+    font-weight: bold;
+}
+
+.green-banner .grass-contact-button {
+    padding: 12px 23px;
+    border-radius: 32px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Noto Serif, serif;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.grass-contact-button:hover {
+    background-color: #69af07;
+    color: #ffffff;
+  }
+
+@media (max-width: 1024px) {
+    .green-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .green-banner p {
+        font-size: 30px;
+    }
+
+    .green-container {
+        height: 200px;
+        margin-top: 15px;
+    }
+
+    .grass-contact-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .green-banner {
+        margin: 25px;
+        gap: 20px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .green-banner p {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .grass-contact-button {
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .green-banner {
+        margin: 15px;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .green-banner p {
+        font-size: 20px;
+    }
+
+    .grass-contact-button {
+        align-self: flex-start;
+    }
+}

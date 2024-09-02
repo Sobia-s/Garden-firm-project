@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.hero-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-section {
+        height: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .hero-section::before {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        height: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-section::before {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+                                      /* second section */
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards;
+    transition: transform 0.5s ease;
+}
+
+.first-box {
+    width: 40%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.first-box h1{
+    font-size: 32px;
+    font-family: Noto Serif, serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #483b33;
+}
+
+.first-box span{
+    color: #69af07;
+}
+
+.first-box p{
+   color: #858585;
+   line-height: 28px;
+   font-size: 15px;
+   margin-top: 10px;
+}
+
+.first-box-innerbox1 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.first-box-innerbox2{
+    display: flex;
+    margin-top: 30px;
+}
+
+.second-box {
+    background-image: url('./img.png');
+    background-size: cover;
+    background-position: left;
+    height: 550px;
+    width: 60%;
+    position: relative;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .first-box, .second-box {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .second-box {
+        height: 400px;
+    }
+
+    .first-box {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding-left: 20px;
+      }
+
+    .first-box h1 {
+        font-size: 28px;
+    }
+
+    .first-box p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .first-box-innerbox1, .first-box-innerbox2 {
+        flex-direction: column;
+    }
+
+    .second-box {
+        height: 300px;
+        background-position: center;
+    }
+
+    .first-box div {
+        margin-top: 15px;
+    }
+
+    .second-box div {
+        margin-top: 15px;
+    }
+
+    hr {
+        margin-top: 15px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+      padding-left: 20px;
+    }
+
+    .first-box h1 {
+        font-size: 24px;
+    }
+
+    .first-box p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .first-box {
+        padding-left: 10px;
+    }
+
+    .first-box div {
+        margin-top: 15px;
+    }
+
+    .second-box {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .second-box div {
+        margin-top: 15px;
+    }
+
+    hr {
+        margin-top: 15px;
+        margin-bottom: -15px;
+        width: 70%;
+    }
+
+}
+
+

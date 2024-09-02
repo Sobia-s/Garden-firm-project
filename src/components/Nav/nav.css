@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    transition: max-height 0.3s ease-out;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 16px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: #69af07;
+}
+
+.navbar-button {
+    background-color: #69af07;
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    margin: auto;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+    background-color: #636563;
+    color: #ffffff;
+}
+
+@media (max-width: 750px) {
+    .menu-icon {
+        display: block;
+    }
+
+    ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        background-color: rgba(255, 255, 255, 1);
+        max-height: 0;
+        overflow: hidden;
+        border-top: 1px solid #ddd;
+        text-align: center;
+    }
+
+    ul.open {
+        max-height: 380px;
+    }
+
+    li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-button {
+        margin-top: -5px;
+        width: auto;
+    }
+}
+
+.cart-count {
+    background-color: rgb(33, 108, 236);
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 11px;
+    position: relative;
+    top: -15px;
+    left: -10px;
+  }

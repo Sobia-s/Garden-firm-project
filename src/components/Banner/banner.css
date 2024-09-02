@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-image: url('./banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    padding-left: 20px;
+}
+
+.banner-content {
+    z-index: 1;
+    max-width: 50%;
+    background-color: rgba(255, 252, 252, 0.8);
+    padding: 50px;
+    border-radius: 5px;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards;
+    transition: transform 0.5s ease;
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    color: #404040;
+}
+
+.banner-content .banner-para {
+    font-size: 1rem;
+    color: #545353;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+#garden-para {
+    font-size: x-large;
+    font-style: oblique;
+    color: #404040;
+}
+
+.cta-button {
+    background-color: #69af07;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+.cta-button:hover{
+    background-color: #636563;
+    color: #ffffff;
+}
+
+.cta-button.secondary {
+    background-color: #636563;
+    margin: 20px;
+}
+.cta-button.secondary:hover{
+    background-color: #69af07;
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 450px;
+        padding-left: 15px;
+    }
+
+    .banner-content {
+        max-width: 60%;
+        padding: 40px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 350px;
+        padding-left: 10px;
+    }
+
+    .banner-content {
+        max-width: 70%;
+        padding: 30px;
+    }
+
+    #garden-para {
+        font-size: 1.2rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .banner {
+        height: 300px;
+        padding-left: 5px;
+        justify-content: center;
+    }
+
+    .banner-content {
+        max-width: 95%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #garden-para {
+        font-size: 1rem;
+    }
+
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-content p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        margin-top: -15px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+                                              /* second section */
+
+.services-section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.services-intro {
+    text-align: center;
+}
+
+.services-intro h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: #434342;
+    font-family: 'Georgia', sans-serif;
+}
+
+.services-intro p {
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #82553f;
+}
+
+.heading-span {
+    color: #66a733;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 45px;
+}
+
+.service-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.service-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.service-title {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 190px;
+    height: 190px;
+    background-color: #ffa226;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.service-title h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    transition: opacity 0.3s ease;
+}
+
+.hedge-title {
+    background-color: #ffa226;
+}
+
+.grass-title {
+    background-color: #10b6fe;
+}
+
+.sapling-title {
+    background-color: #f82e56;
+}
+
+@media (max-width: 1024px) {
+    .services-intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .service-item {
+        width: 250px;
+    }
+
+    .service-item img {
+        height: 250px;
+    }
+
+    .service-title {
+        width: 160px;
+        height: 160px;
+    }
+
+    .service-title h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .services-intro h1 {
+        font-size: 2rem;
+    }
+
+    .service-item {
+        width: 220px;
+    }
+
+    .service-item img {
+        height: 220px;
+    }
+
+    .service-title {
+        width: 140px;
+        height: 140px;
+    }
+
+    .service-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .service-title .hover-text {
+        font-size: 0.85rem;
+    }
+
+    .services-list {
+        margin-bottom: -30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section {
+        padding: 50px 10px;
+    }
+
+    .services-intro h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .services-intro p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .services-list {
+        gap: 15px;
+    }
+
+    .service-item {
+        width: 180px;
+    }
+
+    .service-item img {
+        height: 180px;
+    }
+
+    .service-title {
+        width: 100px;
+        height: 100px;
+        transform: translateY(30%);
+    }
+
+    .service-title h1 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .services-intro h1 {
+        font-size: 1.6rem;
+    }
+
+    .services-intro p {
+        font-size: 1rem;
+    }
+
+    .service-item {
+        width: 160px;
+    }
+
+    .service-item img {
+        height: 160px;
+    }
+
+    .service-title {
+        width: 90px;
+        height: 90px;
+        transform: translateY(20%);
+    }
+
+    .service-title h1 {
+        font-size: 0.9rem;
+    }
+}

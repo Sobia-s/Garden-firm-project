@@ -1,0 +1,254 @@
+.servives-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    background-color: rgb(242, 243, 243);
+    background-color: #ffffff;
+    transform: translateY(20px);
+    animation: fadeInUp 2s ease-out forwards;
+    transition: transform 0.5s ease;
+}
+
+.services-first-box {
+    background-image: url('./banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 40%;
+    position: relative;
+}
+
+.service-second-box{
+    width: 60%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.service-second-box h1{
+    font-size: 32px;
+    font-family: Noto Serif, serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #483b33;
+}
+
+.service-second-box span{
+    color: #69af07;
+}
+
+.service-second-box p{
+   color: #858585;
+   line-height: 28px;
+   font-size: 15px;
+   margin-top: 10px;
+}
+
+.second-box-innerbox1 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.second-box-innerbox2 {
+    display: flex;
+    margin-top: 30px;
+}
+
+hr{
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .servives-container {
+        flex-direction: column;
+    }
+
+    .services-first-box, .service-second-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .service-second-box {
+        height: 300px;
+    }
+
+    .services-first-box {
+        padding-left: 20px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .service-second-box {
+        height: 400px;
+    }
+
+    .service-second-box h1 {
+        font-size: 28px;
+    }
+
+    .service-second-box p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .second-box-innerbox1, .second-box-innerbox2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .services-first-box {
+        height: 300px;
+        background-position: center;
+        margin-top: -30px;
+    }
+
+    .service-second-box div {
+        margin-top: 15px;
+    }
+
+    .service-second-box div {
+        margin-top: 15px;
+    }
+
+    hr {
+        margin-top: 15px;
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+     .services-first-box {
+        margin-top: -30px;
+     }
+
+    .service-second-box h1 {
+        font-size: 24px;
+    }
+
+    .service-second-box p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .service-second-box{
+        padding-left: 15px;
+        margin-bottom: 100px;
+    }
+
+    .service-second-box div {
+        margin-top: 15px;
+    }
+
+    .service-second-box {
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    .service-second-box div {
+        margin-top: 15px;
+    }
+
+    hr {
+        margin-top: 15px;
+        margin-bottom: -15px;
+        width: 70%;
+    }
+}
+                                                                    /* Second section */
+
+
+.services-second-container {
+    background-color: rgb(248, 248, 235);
+    padding: 90px;
+    margin-top: 50px;
+    margin-bottom: -25px;
+}
+
+.second-services-box{
+    display: flex;
+    padding: 20px;
+}
+
+.second-service-each-box{
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 15px;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 0 10px rgb(187, 186, 186);
+    transition: 0.5s;
+}
+
+.second-service-each-box:hover{
+    transform: translateY(-10px);
+}
+
+.second-services-box .second-servive-para {
+    margin-bottom: 5px;
+    color: #9f8447;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.second-service-each-box h4 {
+    font-size: 18px;
+    color: #483b33;
+}
+
+.second-service-each-box h4:hover {
+    font-size: 18px;
+    color: #69af07;
+    cursor: pointer;
+}
+.second-service-each-box p{
+  margin-top: 10px;
+  line-height: 30px;
+  color: #858585;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .second-services-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-service-each-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-second-container {
+        padding: 40px;
+        margin-top: 100px;
+        margin-bottom: -25px;
+    }
+
+    .second-service-each-box {
+        padding: 20px;
+    }
+
+    .second-service-each-box h4 {
+        font-size: 16px;
+    }
+
+    .second-service-each-box p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:350px) {
+    .services-second-container{
+        margin-top: 220px;
+        margin-bottom: -50px;
+    }
+}
