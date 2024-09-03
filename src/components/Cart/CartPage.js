@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { CartContext } from './cartContext';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, useLocation} from 'react-router-dom';
 import { Nav } from '../Nav/nav';
 import { Link } from 'react-router-dom';
 import './cart1.css';
@@ -8,6 +8,12 @@ import './cart2.css';
 import { Footer } from '../Footer/footer';
 
 export function CartPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = "Your Cart - Lucky-Shrub Garden Firm";
+  }, [location]);
+
   const { cartItems, removeItemFromCart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
   const navigate = useNavigate();
 

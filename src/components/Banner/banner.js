@@ -4,8 +4,15 @@ import img1 from './img1.jpg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export function Banner() {
+   const location = useLocation();
+
+   useEffect(() => {
+    document.title = "Luchy-Shrub Garden Firm";
+   }, [location])
     return (
   <>
   <div className="banner">

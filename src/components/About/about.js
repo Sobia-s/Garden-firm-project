@@ -3,8 +3,16 @@ import './about.css';
 import { Nav } from "../Nav/nav";
 import { About2nd } from "./about2nd";
 import { Footer } from "../Footer/footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export function About(){
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = "About Us - Lucky-Shrub Garden Firm";
+  }, [location]);
+
     return(
         <>
         <Nav />

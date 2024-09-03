@@ -3,8 +3,15 @@ import { CartContext } from "./cartContext";
 import { Nav } from "../Nav/nav";
 import { Footer } from "../Footer/footer";
 import './checkout.css';
+import { useLocation } from "react-router-dom";
 
 export function CheckoutPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = "Checkout - Lucky-Shrub Garden Firm";
+  }, [location])
+
   const { cartItems, clearCart } = useContext(CartContext);
   const [formData, setFormData] = useState({
     name: '',

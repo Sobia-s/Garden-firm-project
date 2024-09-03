@@ -2,8 +2,15 @@ import React from "react";
 import './contact.css';
 import { Nav } from "../Nav/nav";
 import {Footer} from "../Footer/footer";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export function Contact(){
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = "Contact Us - Lucky-Shrub Garden Firm";
+  }, [location]);
     return(
         <>
         <Nav />

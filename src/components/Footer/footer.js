@@ -24,9 +24,9 @@ export function Footer(){
             </div>
         </div>
         <div className="footer-bottom">
-            <div className="footer-links">
-            <a>Payment Terms</a>
-            <a>Policy</a>
+        <div className="footer-links">
+            <button className="footer-button">Payment Terms</button>
+            <button className="footer-button">Policy</button>
           </div>
           </div>
         </footer>

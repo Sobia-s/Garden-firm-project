@@ -2,8 +2,15 @@ import React from "react";
 import { Nav } from "../Nav/nav";
 import './services.css';
 import { Services2nd } from "./2ndservice";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 export function Services(){
+  const location = useLocation();
+
+   useEffect(() => {
+      document.title = 'Our Services - Lucky-Shrub Garden Firm';
+   }, [location]);
     return(
         <>
         <Nav />

@@ -61,24 +61,24 @@
     margin-top: 40px;
 }
 
-.footer-bottom p {
-    margin: 0;
-}
-
 .footer-links {
     margin-top: 10px;
 }
 
-.footer-links a {
+.footer-button {
     color: #ffffff;
     margin: 0 10px;
     text-decoration: none;
+    border: none;
     font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(72, 59, 51, 1);
 }
 
-.footer-links a:hover {
+.footer-button:hover {
     text-decoration: underline;
 }
+
 
 @media (max-width: 768px) {
     .footer-container {

@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import './shop.css';
 import { Nav } from "../Nav/nav";
 import { Footer } from "../Footer/footer";
 import { CartContext } from "../Cart/cartContext";
+import { useLocation } from "react-router-dom";
 import img1 from './shop/img1.jpg';
 import img2 from './shop/img2.jpg';
 import img3 from './shop/img3.jpg';
@@ -14,6 +15,12 @@ import img8 from './shop/img8.jpg';
 import img9 from './shop/img9.jpg';
 
 export function Shop() {
+    const location = useLocation();
+
+    useEffect(() => {
+        document.title = "Shop - Luchy-Shrub Garden Firm";
+    }, [location]);
+
     const { addToCart } = useContext(CartContext);
 
     const products = [
