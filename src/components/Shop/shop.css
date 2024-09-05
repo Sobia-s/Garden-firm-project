@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 70px;
     padding: 50px;
+    margin-bottom: 30px;
 }
 
 .product {
@@ -64,7 +65,8 @@
 @media (max-width: 480px) {
     .shop-container {
         padding: 20px;
-        gap: 20px;
+        gap: 25px;
+        margin-bottom: 20px;
     }
 
     .product {

@@ -13,8 +13,9 @@ export function Banner() {
    useEffect(() => {
     document.title = "Luchy-Shrub Garden Firm";
    }, [location])
+
     return (
-  <>
+    <>
   <div className="banner">
   <div className="banner-content">
     <p id='garden-para'>A Dream Garden Home</p>
@@ -30,7 +31,7 @@ export function Banner() {
 <div className="services-section">
   <div className="services-intro">
     <h1><span class="heading-span">Turn your home </span>into a Greenhouse!</h1>
-    <p>The services we render......</p>
+    <p>The services that we render......</p>
   </div>
   <div className="services-list">
     <div className="service-item">

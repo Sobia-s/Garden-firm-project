@@ -245,8 +245,15 @@
     .green-banner p {
         font-size: 20px;
     }
+}
 
-    .grass-contact-button {
-        align-self: flex-start;
+@media (max-width: 400px){
+    .green-container-1 .green-banner .grass-contact-button {
+        padding: 8px 12px; /* Adjust padding to make the button shorter */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
