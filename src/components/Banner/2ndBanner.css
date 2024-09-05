@@ -247,7 +247,7 @@
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .green-container-1 .green-banner .grass-contact-button {
         padding: 8px 12px; /* Adjust padding to make the button shorter */
         font-size: 14px; /* Adjust font size for smaller screens */
