@@ -1,9 +1,9 @@
-body {
-    padding: 0;
+*, body{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    font-family: Arial,sans-serif;
+ }
 
 .second-services-container {
     text-align: center;

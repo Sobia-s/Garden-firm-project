@@ -1,4 +1,9 @@
-.footer {
+*, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .footer {
     background-color: rgba(72, 59, 51, 1);
     color: #ffffff;
     padding: 80px 0;

@@ -1,4 +1,10 @@
-.garden-heading {
+ *, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .garden-heading {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 100px;
