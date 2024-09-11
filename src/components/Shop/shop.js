@@ -40,8 +40,10 @@ export function Shop() {
         <Nav />
         <section className="hero-section">
             <div className="hero-content">
-                <h1>SHOP</h1>
-                <p>Home / Shop</p>
+            <h1>SHOP</h1>
+            <p>
+              <a href="/" className="home-link">Home</a> / Shop
+           </p>
             </div>
         </section>
 

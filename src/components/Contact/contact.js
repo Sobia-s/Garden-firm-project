@@ -17,7 +17,9 @@ export function Contact(){
         <section className="hero-section">
         <div className="hero-content">
          <h1>CONTACT</h1>
-         <p>Home / Contact</p>
+         <p>
+          <a href="/" className="home-link">Home</a> / Contact
+         </p>
         </div>
        </section>
 

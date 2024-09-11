@@ -17,7 +17,9 @@ export function Services(){
         <section className="hero-section">
         <div className="hero-content">
          <h1>SERVICES</h1>
-         <p>Home / Services</p>
+         <p>
+          <a href="/" className="home-link">Home</a> / Services
+         </p>
         </div>
        </section>
 

@@ -27,7 +27,9 @@ export function CartPage() {
       <section className="hero-section">
         <div className="hero-content">
           <h1>CART</h1>
-          <p>Home / Cart</p>
+          <p>
+          <a href="/" className="home-link">Home</a> / Cart
+         </p>
         </div>
       </section>
 

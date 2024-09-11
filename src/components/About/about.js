@@ -19,7 +19,9 @@ export function About(){
        <section className="hero-section">
         <div className="hero-content">
          <h1>ABOUT</h1>
-         <p>Home / About</p>
+         <p>
+          <a href="/" className="home-link">Home</a> / About
+         </p>
         </div>
        </section>
 

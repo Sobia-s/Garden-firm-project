@@ -49,6 +49,12 @@ body {
     margin: 10px 0 0;
 }
 
+.home-link {
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1200px) {
     .hero-section {
         height: 120px;

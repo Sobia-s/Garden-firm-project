@@ -68,7 +68,9 @@ export function CheckoutPage() {
       <section className="hero-section">
         <div className="hero-content">
           <h1>CHECKOUT</h1>
-          <p>Home / Checkout</p>
+          <p>
+          <a href="/" className="home-link">Home</a> / Checkout
+         </p>
         </div>
       </section>
       {orderConfirmed && (
