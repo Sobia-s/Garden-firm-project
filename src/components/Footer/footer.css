@@ -6,8 +6,10 @@
  .footer {
     background-color: rgba(72, 59, 51, 1);
     color: #ffffff;
-    padding: 80px 0;
+    padding-top: 70px;
+    padding-bottom: 10px;
     font-family: Maven Pro, sans-serif;
+
 }
 
 .footer-container {
